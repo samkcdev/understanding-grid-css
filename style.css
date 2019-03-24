@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1em;
+}
+
+.items {
+  background: #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
