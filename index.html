@@ -4,21 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Learning CSS Grid</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
+    <h1>Learning CSS Grid</h1>
+    <p>CSS grid is declared on the parent element</p>
+    <pre>
+          .parent{
+                display:grid
+          }
+    </pre>
+    <p>Its always the direct Descendant that turns into grid</p>
+    <p>
+      For creating column based layout, we give
+      <b>grid-template-columns: 200px 200px</b>
+      this code will create a two column layout 200px wide.
+    </p>
+    <p>
+      For creating row based layout, we give
+      <b>grid-template-rows: 100px 200px</b>
+      this code will create a two row layout where the first row will be 100px
+      height and second row will be 200px and third row take the content height.
+    </p>
+    <div class="parent">
+      <div class="child-items">
+        Child One
+      </div>
+      <div class="child-items">
+        Child Two
+      </div>
+      <div class="child-items">
+        Child Three
+      </div>
+      <div class="child-items">
+        Child Four
+      </div>
+      <div class="child-items">
+        Child Five
+      </div>
+      <div class="child-items">
+        Child six
+      </div>
+    </div>
+
+    <!-- <div class="container">
       <div class="items items1">Items One</div>
       <div class="items items2">Items Two</div>
       <div class="items items3">Items Three</div>
       <div class="items items4">Items Four</div>
-      <div class="items items5">Items Four</div>
-      <div class="items items6">Items Four</div>
-      <div class="items items7">Items Four</div>
-      <div class="items items8">Items Four</div>
-      <div class="items items9">Items Four</div>
-      <div class="items items10">Items Four</div>
-    </div>
+      <div class="items items5">Items Five</div>
+      <div class="items items6">Items Six</div>
+      <div class="items items7">Items Seven</div>
+      <div class="items items8">Items Eight</div>
+      <div class="items items9">Items Nine</div>
+      <div class="items items10">Items Ten</div>
+    </div> -->
   </body>
 </html>
